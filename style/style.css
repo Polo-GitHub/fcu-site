@@ -516,6 +516,7 @@ footer{
     font-size: 0.6rem;
     color: var(--dark);
     line-height: 2;
+    padding: 0 1rem 0 0;
 }
 .policy a{
     color: var(--blue);
