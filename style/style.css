@@ -513,7 +513,7 @@ footer{
     flex-direction: column;
     flex-wrap: wrap;
     font-family: "Source Sans 3", font-1 ;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     color: var(--dark);
     line-height: 2;
     padding: 0 1rem 0 0;
@@ -1185,6 +1185,9 @@ footer{
         margin: 0 auto;
         max-width: 100%;
     }
+    .member__left-side p {
+        font-size: 1rem;
+    }
 }
 @media (min-width: 1025px){
     .backgoundImage {
@@ -1193,4 +1196,8 @@ footer{
     .member__left-side {
         padding: 5rem 2rem 5rem 10rem;
     }
+    .member__left-side p {
+        font-size: 1.2rem;
+    }
+    
 }
