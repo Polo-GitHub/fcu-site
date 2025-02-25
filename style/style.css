@@ -80,7 +80,6 @@ img{
     width: 100%;
     padding: 0 1rem;
     max-width: 800px;
-    /* border: 1px solid #000; */
 }
 .headerNav{
     display: flex;
@@ -195,7 +194,7 @@ img{
 .login__wrapper{
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 0.8rem;
     margin-top: 1rem;
 }
 .password__panel,.username__panel{
@@ -256,6 +255,7 @@ img{
     background-color: var(--btn-color);
     color: var(--white);
     cursor: pointer;
+    white-space: nowrap;
     border-radius: 6px;
     display: block;
     font-family: "Source Sans 3", font-1 ;
@@ -665,7 +665,7 @@ footer{
         width: 22px;
     }
     .welcome__heading {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
     .loginBackground{
         background-image: none;
@@ -865,7 +865,7 @@ footer{
     }
 
 }
-@media(min-width:415px) and (max-width:768px){
+@media(min-width:415px) and (max-width:540px){
     .backgoundImage{
         display: none;
     }
@@ -887,31 +887,54 @@ footer{
         gap: 1.5rem;
         flex-shrink: 0;
     }
-    .image-Logo{
-        width: 300px;
-    }
     .imageLogo{
-        display: none;
         width: 160px;
+    }
+    .image-Logo{
+        display: none;
     }
     .imageMenu{
         width: 22px;
     }
+    .welcome__heading {
+        font-size: 1.5rem;
+    }
+    .loginBackground{
+        background-image: none;
+        min-height: 460px;
+        padding: 0 1rem;
+    }
+    .member__left-side {
+        padding: 2rem 1rem 5rem 1rem;
+    }
+    .login__wrapper{
+        display: block;
+    }
+    .username__input, .password__input {
+        width: 100%;
+    }
+    .loginpanel__container {
+        max-width: 800px;
+        margin: 2rem auto 0px;
+    }
+    .sign__btn {
+        width: 100%;
+    }
     .customer__img{
         display: none;
     }
-    .member__left-side {
-        padding: 2rem 2rem 5rem 2rem;
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
     }
     .customer__section{
+        display: grid;
         grid-template-columns: 1fr;
-    
     }
-    .member__left-side p {
-        max-width: 100%;
-    }
-    .loginpanel__container {
-        margin-left: 2rem;
+    .member__heading {
+        font-size: 1.3rem;
     }
     .enquiry__container {
         flex-direction: column;
@@ -923,45 +946,211 @@ footer{
         margin: 50px 0px 0px;
         padding: 0 1rem;
     }
-    .enquiry__box1-text p {
-        font-size: 1.4rem;
-        max-width: 100%;
+    .footer__housing {
+        flex-direction: column;
+        align-items: flex-start;   
     }
-    .img__circle{
-        left: 40%;
+    .footer__fede a, .footer__equal a {
+        font-size: 0.8rem;
+        font-weight: 700;
+    }
+    .footer__container{
+        grid-template-columns: 1fr;
+        padding: 2rem  1rem 1rem 1rem;
+        gap: 0.5rem;
+    }
+    .left-img {
+        max-width: 100px;    
+    }
+    .footer__links{    
+        font-size: 1rem;
+    }
+    .rout__member {  
+        font-size: 1.1rem;
+    }
+    .pipe__line-rut,.pipe__fade{
+        display: none;
+    }
+    .img__circle {
+        left: 35%;
+    }
+    .enquiry__box1-text p {
+        font-size: 1.1rem;
+    }
+
+}
+@media(min-width:541px) and (max-width:768px){
+    .backgoundImage{
+        display: none;
+    }
+    .headerImage{
+        display: none;
+    }
+    .headerNav{
+        display: none;
+    }
+    .image-Logo{
+        display: none;
+    }
+    .headerBackground{
+        height: 50px;
+    }
+    .headerlogo__small-mobile{
+        display: inline-flex;
+        align-items: center;
+        position: absolute;
+        top: 10px;
+        left: 1rem;
+        gap: 1.5rem;
+        flex-shrink: 0;
+    }
+    .imageLogo{
+        width: 180px;
+    }
+    .loginBackground {
+        min-height: 415px;
+        background-image: none;
+    }
+   
+    .imageMenu{
+        width: 22px;
+    }
+    .member__left-side {
+        padding: 2rem 2rem 5rem 2rem;
+    }
+    .loginpanel__container {
+        max-width: 920px;
+    }
+    .headerContainer {
+        max-width: 920px;
+    }
+    .loginpanel {
+        max-width: 570px;
+    }
+    .welcome__heading {
+        font-size: 2rem;
+    }
+    .customer__section{
+        grid-template-columns: 1fr;
+    }
+    .customer__img {
+      display: none;
+    }
+    .enquiry__container {
+        padding: 2rem 1rem 2.5rem 1rem;
+        flex-direction: column;
+    }
+    .enquiry__box1 {
+        height: 200px;
+        max-width: 100%;
+        margin: 40px 0px 15px;
+        padding: 0 20px;
+    }
+    .img__circle {
+        left: 38%;
+    }
+    .footer__container {
+        max-width: 920px;
     }
     .rout__member {
         font-size: 1rem;
     }
     .footer__links {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
     .navy {
         font-size: 0.8rem;
     }
     .footer__fede a, .footer__equal a {
         font-size: 0.8rem;
+    }
+    .footer__paragraphs {
+        font-size: 0.7rem;
     }
 
 }
 @media(min-width:769px) and (max-width:992px){
-    .backgoundImage {
-        right: 0px;
+    .backgoundImage{
+        display: none;
+    }
+    .headerImage{
+        display: none;
+    }
+    .headerNav{
+        display: none;
+    }
+    .image-Logo{
+        display: flex;
+        width: 300px;
+    }
+    .imageLogo{
+        display: none;
+    }
+    .headerBackground{
+        height: 50px;
+    }
+    .headerlogo__small-mobile{
+        display: inline-flex;
+        align-items: center;
+        position: absolute;
+        top: 10px;
+        left: 1rem;
+        gap: 1rem;
+        flex-shrink: 0;
+    }
+   
+    .loginBackground {
+        min-height: 350px;
+        background-image: none;
+    }
+   
+    .imageMenu{
+        width: 22px;
     }
     .member__left-side {
         padding: 2rem 2rem 5rem 2rem;
     }
     .loginpanel__container {
-        max-width: 920px;
+        max-width: 980px;
+        margin-top: 2rem;
     }
     .headerContainer {
         max-width: 920px;
     }
     .loginpanel {
-        max-width: 570px;
+        max-width: 660px;
+    }
+    .welcome__heading {
+        font-size: 2rem;
+    }
+    .customer__section{
+        grid-template-columns: 1fr;
+    }
+    .customer__img {
+      display: none;
+    }
+    .sign__btn {
+        width: 100%;
+    }
+    .member__heading {
+        font-size: 1.7rem;
+    }
+    .member__left-side p {
+        font-size: 1.9rem;
+        max-width: 100%;
     }
     .enquiry__container {
-        max-width: 920px;
+        padding: 2rem 1rem 2.5rem 1rem;
+        flex-direction: column;
+    }
+    .enquiry__box1 {
+        height: 200px;
+        max-width: 100%;
+        margin: 40px 0px 15px;
+        padding: 0 20px;
+    }
+    .img__circle {
+        left: 42%;
     }
     .footer__container {
         max-width: 920px;
@@ -981,88 +1170,27 @@ footer{
     .footer__paragraphs {
         font-size: 0.7rem;
     }
-
 }
-@media(min-width:992px) and (max-width:1024px){
-    .backgoundImage {
-        right: 0px;
-    }
+@media(min-width:993px) and (max-width:1024px){
     .member__left-side {
-        padding: 2rem 2rem 5rem 2rem;
-    }
-    .loginpanel__container {
-        max-width: 920px;
-    }
-    .headerContainer {
-        max-width: 920px;
-    }
-    .loginpanel {
-        max-width: 570px;
-    }
-    .enquiry__container {
-        max-width: 920px;
-    }
-    .footer__container {
-        max-width: 920px;
-    }
-    .rout__member {
-        font-size: 1rem;
-    }
-    .footer__links {
-        font-size: 1rem;
-    }
-    .navy {
-        font-size: 0.8rem;
-    }
-    .footer__fede a, .footer__equal a {
-        font-size: 0.8rem;
-    }
-    .footer__paragraphs {
-        font-size: 0.7rem;
-    }
-
-}
-@media(min-width:1025px){
-    /* .member__left-side {
         padding: 5rem 2rem 5rem 2rem;
     }
     .backgoundImage {
-        right: 0;
-    } */
-    .backgoundImage {
         right: 0px;
     }
-    .member__left-side {
-        padding: 2rem 2rem 5rem 2rem;
-    }
-    .loginpanel__container {
-        max-width: 920px;
-    }
-    .headerContainer {
-        max-width: 920px;
-    }
-    .loginpanel {
-        max-width: 570px;
-    }
     .enquiry__container {
-        max-width: 920px;
+        display: flex;
+        gap: 1rem;
+        padding: 0 1rem;
+        margin: 0 auto;
+        max-width: 100%;
     }
-    .footer__container {
-        max-width: 920px;
+}
+@media (min-width: 1025px){
+    .backgoundImage {
+        right: 110px;
     }
-    .rout__member {
-        font-size: 1rem;
-    }
-    .footer__links {
-        font-size: 1rem;
-    }
-    .navy {
-        font-size: 0.8rem;
-    }
-    .footer__fede a, .footer__equal a {
-        font-size: 0.8rem;
-    }
-    .footer__paragraphs {
-        font-size: 0.7rem;
+    .member__left-side {
+        padding: 5rem 2rem 5rem 10rem;
     }
 }
