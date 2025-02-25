@@ -355,6 +355,7 @@ img{
 .enquiries__section{
     background-color: var(--blue);
     border-bottom: 1.6px solid var(--border-color);
+    padding: 0 1rem;
 }
 .enquiry__container{
     display: flex;
