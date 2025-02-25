@@ -1022,7 +1022,7 @@ footer{
     }
 
 }
-@media(max-width:1025px){
+@media(min-width:1025px){
     /* .member__left-side {
         padding: 5rem 2rem 5rem 2rem;
     }
