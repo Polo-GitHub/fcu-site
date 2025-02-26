@@ -929,12 +929,7 @@ footer{
 }
 /* ///////::::: Media queries for all fulz webpage start here...:::::::///////// */
 @media(max-width:320px){
-     .background__Image{
-/*         background-size: auto 500px;
-        background-position: center top; */
-/*          background-image: none; */
-    } 
-    
+
     .wrapper > p {
         font-size: 1.4rem;
         margin-bottom: 0rem;
@@ -954,12 +949,6 @@ footer{
     }
 }
 @media(min-width:321px) and (max-width:375px){
-    .background__Image{
-/*        background-size: auto 500px;
-         background-position: center top; */
-/*         background-image: none; */
-        
-    } 
     .wrapper > p {
         width: 100%;
     }
@@ -1007,10 +996,6 @@ footer{
 
 }
 @media(min-width:541px) and (max-width:768px){
-/*     .background__Image{
-        background-size: auto 370px;
-        background-position: center top;
-    }  */
     .verify__heading > h3 {
         font-size: 1.5rem;
     }
