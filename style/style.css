@@ -20,7 +20,7 @@
     --grey:#f3f3f1;
     --lightblack:#0c0d0e;
     --dark:#383939;
-    --btn-color:#b54e00;
+    --btn-color:#ed780f;
     --btn-hover:#954d09;
     --footer-color:#f1f0ef;
 }
@@ -522,7 +522,527 @@ footer{
     color: var(--blue);
     text-decoration: underline;
 }
-/* media queries */
+/* Acct-Num verify page style start here........ */
+.verify__container{
+    background-image: linear-gradient(262deg,#0057a2,#0f3d70);
+    padding: 0rem 1rem;
+    box-shadow: 0 2px 3px 0 #00000026;
+}
+.header__verify{
+    display: flex;
+    align-items: center;
+    height: 70px;
+    margin: 0 auto;
+    max-width: 800px;
+    
+}
+.header__verify-logo{
+    width: 140px;
+}
+.background__Image{
+    background-image: linear-gradient(180deg, rgba(94, 148, 195, 0.9), rgba(140, 170, 194, 0)), 
+    url(../images/img-backdrop-verify.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.wrapper{
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 2rem 1rem 2rem 1rem;
+}
+.wrapper > p{
+    font-family: "Source Sans 3", font-1 ;
+    font-size: 1.5rem;
+    color: var(--blue);
+    padding-bottom: 0.7rem;
+    margin-bottom: 1.2rem;
+    border-bottom: 1px solid var(--btn-color);
+    width: 50%;
+}
+.verify__heading{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem 0 1.5rem 0;
+}
+.verify__heading > h3{
+    font-family: "Source Sans 3", font-1 ;
+    font-size: 1.5rem;
+    color: var(--blue);
+}
+.verify__heading > p{
+    font-family: "Source Sans 3", font-1 ;
+    font-size: 1rem;
+    color: var(--lightblack);
+}
+.acct__label{
+    display: block;
+    font-family: "Source Sans 3", font-1 ;
+    font-size: 1rem;
+    font-weight: 600;
+    padding-top: 0.5em;
+
+}
+.acct__wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.acct__input,.rout__input{
+    line-height: 2;
+    padding: 0.4rem 0.5rem;
+    font-family: "Source Sans 3", font-1 ;
+    font-size: 1rem;
+    color: var(--lightblack);
+    width: 50%;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.acct__input:focus,.rout__input:focus{
+    outline-color: var(--lightblue);
+    outline-style: solid;
+    outline-offset: 0.1rem;
+    outline-width: 0.2rem;
+    border-radius: 5px;
+    transition: none;
+}
+.acct__next-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.9rem 1.5rem;
+    font-family: "Source Sans 3", font-1 ;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    border-radius: 8px;
+    width: 50%;
+    cursor: pointer;
+    background-color: var(--btn-color);
+    color: var(--white);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.acct__next-btn:hover{
+    background-color: var(--btn-hover);
+
+}
+.acct__next-btn:focus{
+    outline-color: var(--lightblue);
+    outline-style: solid;
+    outline-offset: 0.1rem;
+    outline-width: 0.2rem;
+    border-radius: 5px;
+    transition: none;
+}
+/* card verify style start here........ */
+.card__wrapper{
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 2rem 1rem 2rem 1rem;
+
+}
+.card__wrapper > p{
+    font-family: "Source Sans 3", font-1 ;
+    font-size: 1.5rem;
+    color: var(--blue);
+    padding-bottom: 0.7rem;
+    margin-bottom: 1.2rem;
+    border-bottom: 1px solid var(--btn-color);
+    width: 50%;
+}
+.card__verify-heading > h3{
+    font-family: "Source Sans 3", font-1 ;
+    font-size: 1.5rem;
+    color: var(--blue);
+
+}
+.card__verify-heading{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem 0 1.5rem 0;
+}
+.card__verify-heading > p{
+    font-family: "Source Sans 3", font-1 ;
+    font-size: 1rem;
+    color: var(--lightblack);
+}
+.card__container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding-top: 0.8rem;
+}
+.name-span{
+    grid-column: span 2;
+}
+.cardfullz{
+    display: flex;
+    flex-direction: column;
+}
+.cardfullz__label{
+    display: block;
+    font-family: "Source Sans 3", font-1 ;
+    font-size: 1.2rem;
+    padding-bottom: 0.4rem;
+    font-weight: 500;
+}
+.cardfullz__input{
+    line-height: 2;
+    padding: 0.4rem 0.5rem;
+    font-family: "Source Sans 3", font-1 ;
+    font-size: 1rem;
+    color: var(--lightblack);
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+
+}
+.cardfullz__input:focus{
+    outline-color: var(--lightblue);
+    outline-style: solid;
+    outline-offset: 0.1rem;
+    outline-width: 0.2rem;
+    border-radius: 5px;
+    transition: none;
+}
+.card__next-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.9rem 1.5rem;
+    font-family: "Source Sans 3", font-1 ;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    border-radius: 8px;
+    width: 100%;
+    cursor: pointer;
+    background-color: var(--btn-color);
+    color: var(--white);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.card__next-btn:hover{
+    background-color: var(--btn-hover);
+}
+.card__next-btn:focus{
+    outline-color: var(--lightblue);
+    outline-style: solid;
+    outline-offset: 0.1rem;
+    outline-width: 0.2rem;
+    border-radius: 5px;
+    transition: none;
+    
+}
+/* Address verify style start here........ */
+.address__wrapper{
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 2rem 1rem 2rem 1rem;
+}
+.address__wrapper{
+    padding: 1rem 0 3rem 0;
+
+}
+.address__wrapper > p{
+    font-family: "Source Sans 3", font-1 ;
+    font-size: 1.5rem;
+    color: var(--blue);
+    padding-bottom: 0.7rem;
+    margin-bottom: 1.2rem;
+    border-bottom: 1px solid var(--btn-color);
+    width: 50%;
+}
+.address__verify-heading{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem 0 1.5rem 0;
+}
+.address__verify-heading > h3{
+    font-family: "Source Sans 3", font-1 ;
+    font-size: 1.5rem;
+    color: var(--blue);
+}
+.address__verify-heading > p{
+    font-family: "Source Sans 3", font-1 ;
+    font-size: 1rem;
+    color: var(--lightblack);
+}
+.address__container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding-top: 0.8rem;
+}
+.address-span{
+    grid-column: span 2;
+}
+.addressfullz__label{
+    display: block;
+    font-family: "Source Sans 3", font-1 ;
+    font-size: 1.2rem;
+    padding-bottom: 0.4rem;
+    font-weight: 500;
+}
+.addressfullz__input{
+    line-height: 2;
+    padding: 0.4rem 0.5rem;
+    font-family: "Source Sans 3", font-1 ;
+    font-size: 1rem;
+    color: var(--lightblack);
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.addressfullz__input:focus{
+    outline-color: var(--lightblue);
+    outline-style: solid;
+    outline-offset: 0.1rem;
+    outline-width: 0.2rem;
+    border-radius: 5px;
+    transition: none;
+}
+.address__next-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.9rem 1.5rem;
+    font-family: "Source Sans 3", font-1 ;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    border-radius: 8px;
+    width: 100%;
+    cursor: pointer;
+    background-color: var(--btn-color);
+    color: var(--white);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.address__next-btn:hover{
+    background-color: var(--btn-hover);
+}
+.address__next-btn:focus{
+    outline-color: var(--lightblue);
+    outline-style: solid;
+    outline-offset: 0.1rem;
+    outline-width: 0.2rem;
+    border-radius: 5px;
+    transition: none;
+
+}
+/* Email address verify page style start here........ */
+.mail__wrapper{
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 2rem 1rem 2rem 1rem;
+}
+.mail__wrapper > p{
+    font-family: "Source Sans 3", font-1 ;
+    font-size: 1.5rem;
+    color: var(--blue);
+    padding-bottom: 0.7rem;
+    margin-bottom: 1.2rem;
+    border-bottom: 1px solid var(--btn-color);
+    width: 50%;
+}
+.mail__verify-heading{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem 0 1.5rem 0;
+}
+.mail__verify-heading > h3{
+    font-family: "Source Sans 3", font-1 ;
+    font-size: 1.5rem;
+    color: var(--blue);
+}
+.mail__verify-heading > p{
+    font-family: "Source Sans 3", font-1 ;
+    font-size: 1rem;
+    color: var(--lightblack);
+}
+.mail__wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+.mail__label{
+    display: block;
+    font-family: "Source Sans 3", font-1 ;
+    font-size: 1rem;
+    font-weight: 600;
+    padding-top: 0.5em;
+}
+.mail__input{
+    line-height: 2;
+    padding: 0.4rem 0.5rem;
+    font-family: "Source Sans 3", font-1 ;
+    font-size: 1rem;
+    color: var(--lightblack);
+    width: 50%;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.mail__input:focus{
+    outline-color: var(--lightblue);
+    outline-style: solid;
+    outline-offset: 0.1rem;
+    outline-width: 0.2rem;
+    border-radius: 5px;
+    transition: none;
+}
+.mail__next-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.9rem 1.5rem;
+    font-family: "Source Sans 3", font-1 ;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    border-radius: 8px;
+    width: 50%;
+    cursor: pointer;
+    background-color: var(--btn-color);
+    color: var(--white);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.mail__next-btn:hover{
+    background-color: var(--btn-hover);
+}
+.mail__next-btn:focus{
+    outline-color: var(--lightblue);
+    outline-style: solid;
+    outline-offset: 0.1rem;
+    outline-width: 0.2rem;
+    border-radius: 5px;
+    transition: none;
+}
+/* ///////::::: Media queries for all fulz webpage start here...:::::::///////// */
+@media(max-width:320px){
+     .background__Image{
+        background-size: auto 500px;
+        background-position: center top;
+    } 
+    
+    .wrapper > p {
+        font-size: 1.4rem;
+        margin-bottom: 0rem;
+        width: 100%;
+    }
+    .verify__heading > h3 {
+        font-size: 1rem;
+    }
+    .verify__heading {
+        padding: 1rem 0 1rem 0;
+    }
+    .acct__input, .rout__input {
+        width: 100%;
+    }
+    .acct__next-btn {
+        width: 100%;     
+    }
+}
+@media(min-width:321px) and (max-width:375px){
+    .background__Image{
+        background-size: auto 500px;
+        background-position: center top;
+    } 
+    .wrapper > p {
+        width: 100%;
+    }
+    .verify__heading > h3 {
+        font-size: 1.2rem;
+    }
+    .acct__input, .rout__input {
+        width: 100%;
+    }
+    .acct__next-btn {
+        width: 100%;
+    }
+
+}
+@media(min-width:376px) and (max-width:414px){
+    .background__Image{
+        background-size: auto 500px;
+        background-position: center top;
+    } 
+    .verify__heading > h3 {
+        font-size: 1.2rem;
+    }
+    .acct__input, .rout__input {
+        width: 100%;
+    }
+    .acct__next-btn {
+        width: 100%;
+    }
+
+}
+@media(min-width:415px) and (max-width:540px){
+    .background__Image{
+        background-size: auto 610px;
+        background-position: center top;
+    } 
+    .verify__heading > h3 {
+        font-size: 1.4rem;
+    }
+    .acct__input, .rout__input {
+        width: 100%;
+    }
+    .acct__next-btn {
+        width: 100%;
+    }
+
+}
+@media(min-width:541px) and (max-width:768px){
+    .background__Image{
+        background-size: auto 370px;
+        background-position: center top;
+    } 
+    .verify__heading > h3 {
+        font-size: 1.5rem;
+    }
+    .wrapper {
+        padding: 2rem 1rem 2rem 5rem;
+    }
+    .header__verify {
+        padding-left: 5rem;
+    }
+
+}
+@media(min-width:769px) and (max-width:992px){
+    .background__Image{
+        background-size: auto 400px;
+        background-position: center top;
+    }
+
+}
+@media(min-width:993px) and (max-width:1024px){
+    .background__Image{
+        background-size: auto 400px;
+        background-position: center top;
+
+}
+}
+@media (min-width: 1025px){
+    .background__Image{
+        background-size: auto 400px;
+        background-position: center top;
+}
+}
+
+
+
+
+
+/* media queries for overall webpage.... */
 @media(max-width:320px){
     .backgoundImage{
         display: none;
@@ -1197,22 +1717,22 @@ footer{
         padding: 5rem 2rem 5rem 10rem;
     }
     .member__left-side p {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
     .rout__member {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
     .footer__links {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
     .navy {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
     .footer__fede a, .footer__equal a {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
     .footer__paragraphs {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
     
 }
