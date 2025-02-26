@@ -932,6 +932,7 @@ footer{
      .background__Image{
 /*         background-size: auto 500px;
         background-position: center top; */
+         background-image: none
     } 
     
     .wrapper > p {
