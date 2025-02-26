@@ -1197,22 +1197,22 @@ footer{
         padding: 5rem 2rem 5rem 10rem;
     }
     .member__left-side p {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
     .rout__member {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
     .footer__links {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
     .navy {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
     .footer__fede a, .footer__equal a {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
     .footer__paragraphs {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
     
 }
