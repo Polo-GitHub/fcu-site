@@ -932,7 +932,7 @@ footer{
      .background__Image{
 /*         background-size: auto 500px;
         background-position: center top; */
-         background-image: none;
+/*          background-image: none; */
     } 
     
     .wrapper > p {
@@ -1007,10 +1007,10 @@ footer{
 
 }
 @media(min-width:541px) and (max-width:768px){
-    .background__Image{
+/*     .background__Image{
         background-size: auto 370px;
         background-position: center top;
-    } 
+    }  */
     .verify__heading > h3 {
         font-size: 1.5rem;
     }
