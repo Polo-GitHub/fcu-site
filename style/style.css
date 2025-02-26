@@ -252,6 +252,9 @@ img{
 
 }
 .sign__btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--btn-color);
     color: var(--white);
     cursor: pointer;
