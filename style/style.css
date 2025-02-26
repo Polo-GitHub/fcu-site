@@ -930,8 +930,8 @@ footer{
 /* ///////::::: Media queries for all fulz webpage start here...:::::::///////// */
 @media(max-width:320px){
      .background__Image{
-        background-size: auto 500px;
-        background-position: center top;
+/*         background-size: auto 500px;
+        background-position: center top; */
     } 
     
     .wrapper > p {
