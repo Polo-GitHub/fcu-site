@@ -952,7 +952,7 @@ footer{
         width: 100%;
     }
     .card__verify-heading > h3 {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
     .card__container {
         grid-template-columns: repeat(1, 1fr);
@@ -964,7 +964,7 @@ footer{
         width: 100%;
     }
     .address__verify-heading > h3 {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
     .address__container {
         grid-template-columns: repeat(1, 1fr);
@@ -973,7 +973,8 @@ footer{
         grid-column: span 1;
     }
     .mail__wrapper > p {
-        width: 1000%;
+        width: 100%;
+        font-size: 1.4rem;
     }
     .mail__verify-heading > h3 {
         font-size: 1rem;
