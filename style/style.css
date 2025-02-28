@@ -1176,7 +1176,7 @@ footer{
 }
 @media (min-width: 1025px){
     .background__Image{
-        background-size: auto 520px;
+        background-size: auto 550px;
         background-position: top left;
    }
    .card__container {
