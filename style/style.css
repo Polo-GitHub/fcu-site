@@ -20,8 +20,10 @@
     --grey:#f3f3f1;
     --lightblack:#0c0d0e;
     --dark:#383939;
+    --error-color:#d31313;
     --btn-color:#ed780f;
     --btn-hover:#954d09;
+    --btn-active:#b54e00;
     --footer-color:#f1f0ef;
 }
 
@@ -255,9 +257,8 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--btn-color);
+    background-color: var(--btn-active);
     color: var(--white);
-    cursor: pointer;
     white-space: nowrap;
     border-radius: 6px;
     font-family: "Source Sans 3", font-1 ;
@@ -267,10 +268,24 @@ img{
     padding: 0 5px;
     margin-top: 1.6rem;
     width: 80px;
+    opacity: 0.2;
+    pointer-events: none;
 }
-.sign__btn:hover{
+.sign__btn.active{
+    background-color: var(--btn-color);
+    cursor: pointer;
+    pointer-events: auto;
+    opacity: 1;
+}
+.sign__btn.active:hover{
     background-color: var(--btn-hover);
     color: var(--white);
+}
+.sign__btn.active:focus{
+    outline: 2px dotted var(--lightblue);
+    outline-offset: 1px;
+    outline-width: 2.3px;
+    transition: none;
 }
 .sign__help{
     width: max-content;
@@ -397,6 +412,40 @@ img{
     color: var(--lightblack);
     font-weight: 700;
     max-width: 200px;
+}
+.error__container{
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--error-color);
+    width: 100%;
+    max-width: 550px;
+    padding: 0.5rem 0.8rem;
+    margin-bottom: 1rem;
+}
+.error__wrap{
+    display: flex;
+    align-items: center;
+}
+.error__wrap p{
+    font-family: "Source Sans 3", font-1 ;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--white);
+    padding-left: 0.8rem;
+}
+.showerrorcontainer{
+    display: flex !important;
+}
+.warning-icon{
+    width: 18px;
+    color: var(--white);
+    background-color: transparent;
+}
+.xmark{
+    width: 22px;
+    color: var(--white);
+    cursor: pointer;
 }
 .img__next-container{
     display: flex;
@@ -974,7 +1023,7 @@ footer{
     }
     .mail__wrapper > p {
         width: 100%;
-        font-size: 1.4rem;
+        font-size: 1.rem;
     }
     .mail__verify-heading > h3 {
         font-size: 1rem;
@@ -1236,7 +1285,7 @@ footer{
     }
     .loginBackground{
         background-image: none;
-        min-height: 460px;
+        min-height: 550px;
         padding: 0 1rem;
     }
     .member__left-side {
@@ -1346,7 +1395,7 @@ footer{
     }
     .loginBackground{
         background-image: none;
-        min-height: 460px;
+        min-height: 550px;
         padding: 0 1rem;
     }
     .member__left-side {
@@ -1464,7 +1513,7 @@ footer{
     }
     .loginBackground{
         background-image: none;
-        min-height: 460px;
+        min-height: 550px;
         padding: 0 1rem;
     }
     .member__left-side {
@@ -1578,7 +1627,7 @@ footer{
     }
     .loginBackground{
         background-image: none;
-        min-height: 460px;
+        min-height: 550px;
         padding: 0 1rem;
     }
     .member__left-side {
@@ -1685,7 +1734,7 @@ footer{
         width: 180px;
     }
     .loginBackground {
-        min-height: 415px;
+        min-height: 450px;
         background-image: none;
     }
    
@@ -1693,10 +1742,11 @@ footer{
         width: 22px;
     }
     .member__left-side {
-        padding: 2rem 2rem 5rem 2rem;
+        padding: 2rem 2rem 5rem 5rem;
     }
     .loginpanel__container {
         max-width: 920px;
+        padding-left: 5rem;
     }
     .headerContainer {
         max-width: 920px;
@@ -1744,6 +1794,9 @@ footer{
     .footer__paragraphs {
         font-size: 0.7rem;
     }
+    .error__container {
+        max-width: 570px;
+    }
 
 }
 @media(min-width:769px) and (max-width:992px){
@@ -1776,9 +1829,12 @@ footer{
         gap: 1rem;
         flex-shrink: 0;
     }
+    .error__container {
+        max-width: 660px;
+    }
    
     .loginBackground {
-        min-height: 350px;
+        min-height: 420px;
         background-image: none;
     }
    
@@ -1786,11 +1842,12 @@ footer{
         width: 22px;
     }
     .member__left-side {
-        padding: 2rem 2rem 5rem 2rem;
+        padding: 2rem 2rem 5rem 5rem;
     }
     .loginpanel__container {
         max-width: 980px;
         margin-top: 2rem;
+        padding-left: 5rem;
     }
     .headerContainer {
         max-width: 920px;
@@ -1816,6 +1873,7 @@ footer{
     .member__left-side p {
         font-size: 1.9rem;
         max-width: 100%;
+        max-width: 500px;
     }
     .enquiry__container {
         padding: 2rem 1rem 2.5rem 1rem;
