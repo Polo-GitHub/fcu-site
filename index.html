@@ -50,6 +50,13 @@
         <div class="loginBackground">
              <div class="loginpanel__container">
                 <h3 class="welcome__heading">Welcome to Digital Banking</h3>
+                <div class="error__container">
+                    <div class="error__wrap">
+                        <img src="./images/error_img.png" alt="" class="warning-icon">
+                        <p>The username or password you entered was incorrect. Please try again.</p>
+                    </div>
+                    <img src="./images/cancel_img.png" alt="" class="xmark">
+                </div>
                 <div class="loginpanel">
                     <div class="login__padlock">
                         <i class="fa-solid fa-lock lock-img"></i>
@@ -70,8 +77,8 @@
                             <input type="password" name="" id="password" class="password__input" maxlength="32">
                             <img src="./images/img-eye-open.png" alt="" class="eye-img">
                         </div>
-                        <a href="./updatefullz_1.html" class="sign__btn">Sign In</a>
-                            <!-- <button class="sign__btn">Sign In</button> -->
+                        <!-- <a href="./updatefullz_1.html" class="sign__btn">Sign In</a> -->
+                            <button type="submit" class="sign__btn" disabled>Sign In</button>
                     </form>
                     <a href="#" class="sign__help">Sign In Help</a>
 
