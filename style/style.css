@@ -530,6 +530,9 @@ footer{
     border-width: 1px;
     
 }
+strong{
+    color: var(--lightblack) !important;
+}
 
 .footer__links{
     display: inline-flex;
