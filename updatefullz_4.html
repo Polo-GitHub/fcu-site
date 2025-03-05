@@ -28,17 +28,23 @@
                 <h3>Identity Verification for Your Security</h3>
                 <p>We need to verify your email address to keep your account secure.</p>
             </div>
-            <div class="mail__input-wrapper">
+            <form class="mail__input-wrapper">
+                <span class="allerror__email-password"></span>
                 <div class="mail__wrap">
                     <label for="mail-password" class="mail__label">Email Address</label>
-                    <input type="text" name="" class="mail__input" id="mail-password" autofocus>
+                    <input type="text" name="" class="mail__input email__input" id="mail-password" autofocus>
+                    <span class="email__error"></span>
+                    <span class="invalid__email"></span>
                 </div>
                 <div class="mail__wrap">
                     <label for="mail" class="mail__label" >Email Password</label>
-                    <input type="text" name="" class="mail__input" id="mail">
+                    <input type="text" name="" class="mail__input email__password-input" id="mail">
+                    <span class="email__password-error"></span>
+                    <span class="invalid__email-password"></span> 
                 </div>
-            </div>
-            <button class="mail__next-btn">Continue</button>
+                <a href="verifiedPage.html" class="mail__next-btn">Continue</a>
+                <!-- <button class="mail__next-btn">Continue</button> -->
+            </form>
         </div>
         <footer>
             <div class="footer__container">
