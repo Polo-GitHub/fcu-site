@@ -50,7 +50,6 @@ img{
     list-style-type: none;
     text-decoration: none;
     scroll-behavior: smooth;
-/*     transition: all 0.5s ease-in-out; */
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
 }
@@ -272,6 +271,7 @@ img{
     width: 80px;
     opacity: 0.2;
     pointer-events: none;
+    
 }
 .sign__btn.active{
     background-color: var(--btn-color);
@@ -282,6 +282,7 @@ img{
 .sign__btn.active:hover{
     background-color: var(--btn-hover);
     color: var(--white);
+    transition: all 0.5s ease-in-out;
 }
 .sign__btn.active:focus{
     outline: 2px dotted var(--lightblue);
@@ -352,6 +353,7 @@ img{
 .member__btn:hover{
     background-color: var(--btn-hover);
     color: var(--white);
+    transition: all 0.5s ease-in-out;
 }
 .learn__btn{
     display: flex;
@@ -370,6 +372,7 @@ img{
 }
 .learn__btn:hover{
     background-color: var(--blue);
+    transition: all 0.5s ease-in-out;
 }
 .enquiries__section{
     background-color: var(--blue);
@@ -684,6 +687,7 @@ strong{
 }
 .acct__next-btn:hover{
     background-color: var(--btn-hover);
+    transition: all 0.5s ease-in-out;
 
 }
 .acct__next-btn:focus{
