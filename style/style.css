@@ -25,6 +25,8 @@
     --btn-hover:#954d09;
     --btn-active:#b54e00;
     --footer-color:#f1f0ef;
+    --green:#008000;
+    
 }
 
 input[type="password"]::-ms-reveal,
@@ -590,6 +592,7 @@ footer{
 .header__verify-logo{
     width: 140px;
 }
+
 .background__Image{
     background-image: linear-gradient(180deg, rgba(94, 148, 195, 0.9), rgba(140, 170, 194, 0)), 
     url(../images/img-backdrop-verify.png);
@@ -976,6 +979,111 @@ footer{
     border-radius: 5px;
     transition: none;
 }
+/* verified page style start here...... */
+.main__verified{
+    background-color: var(--footer-color);
+}
+.container__verified{
+    padding: 0 1rem;
+
+}
+.verified__wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    /* border: 1px solid #000; */
+    background-color: var(--white);
+    margin: 0 auto;
+    margin-top: 2rem;
+    padding: 1rem 1rem;
+    box-shadow: 0 2px 3px 0 #00000026;
+}
+.container__message{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.6rem;
+    align-items: center;
+}
+.verified__heading{
+    font-family: "Source Sans 3", font-1 ;
+    font-size: 2rem;
+    color: var(--lightblue);
+}
+.verified__paragraph{
+    font-family: "Source Sans 3", font-1 ;
+    font-size: 1rem;
+    color: var(--lightblack);
+
+}
+.verified-checkmark{
+    font-size: 2rem;
+    color: var(--green);
+}
+.verified-logo{
+    margin: 0 auto;
+}
+/* ///////::::all errorMessage style for account & rounting number fulz webpage start here...:::/// */
+.allerror__acct-rount{
+    font-family: "Source Sans 3", font-1 ;
+    font-size: 1.1rem;
+    color: var(--error-color);   
+}
+.error__color-border{
+    border: 2px solid var(--error-color) !important;
+    transition: none;
+}
+.acct__error,.rount__error,.invalidRount__error,.invalidAcct__error{
+    font-family: "Source Sans 3", font-1 ;
+    font-size: 1.1rem;
+    color: var(--error-color); 
+    padding-top: 0.2rem;
+}
+/* ///////::::all errorMessage style for credit card fulz webpage start here...:::/// */
+.allerror-card{
+    font-family: "Source Sans 3", font-1 ;
+    font-size: 1.1rem;
+    color: var(--error-color);
+}
+.namerror-card,.invalid__name,.numerror-card,.invalid__card-num,
+.expyerror-card,.invalid__expiry,.cvverror-card,.invalid__cvv,
+.atmerror-card,.invalid__atmpin{
+    font-family: "Source Sans 3", font-1 ;
+    font-size: 1.1rem;
+    color: var(--error-color); 
+    padding-top: 0.2rem;
+}
+/* ///////::::all errorMessage style for address fulz webpage start here...:::/// */
+.all__error-address{
+    font-family: "Source Sans 3", font-1 ;
+    font-size: 1.1rem;
+    color: var(--error-color);
+}
+.fullnamerror,.invalid__fullname,.adrserror,.invalid-street,
+.cityerror,.invalid-city,.stateerror,.invalid-state,.ssneerror,
+.invalid-ssn,.maiden__error,.invalid__maiden-name,.dob__error,
+.invalid__dob,.zipcode__error,.invalid-zipcode,.tele__error,
+.invalid__number{
+    font-family: "Source Sans 3", font-1 ;
+    font-size: 1.1rem;
+    color: var(--error-color); 
+    padding-top: 0.2rem;
+}
+/* ///////::::all errorMessage style for email address fulz webpage start here...:::/// */
+.allerror__email-password{
+    font-family: "Source Sans 3", font-1 ;
+    font-size: 1.1rem;
+    color: var(--error-color);
+}
+.email__error,.invalid__email,.email__password-error,
+.invalid__email-password{
+    font-family: "Source Sans 3", font-1 ;
+    font-size: 1.1rem;
+    color: var(--error-color); 
+    padding-top: 0.2rem;
+
+}
 /* ///////::::: Media queries for all fulz webpage start here...:::::::///////// */
 @media(max-width:320px){
 
@@ -1243,9 +1351,6 @@ footer{
 }
 
 }
-
-
-
 
 
 /* media queries for overall webpage.... */
@@ -1703,6 +1808,9 @@ footer{
     .enquiry__box1-text p {
         font-size: 1.1rem;
     }
+    .verified__wrapper{  
+        max-width: 400px;
+    }
 
 }
 @media(min-width:541px) and (max-width:768px){
@@ -1796,6 +1904,9 @@ footer{
     }
     .error__container {
         max-width: 570px;
+    }
+    .verified__wrapper{  
+        max-width: 400px;
     }
 
 }
@@ -1912,6 +2023,9 @@ footer{
     .address__next-btn {
         max-width: 600px;
     }
+    .verified__wrapper{  
+        max-width: 400px;
+    }
 }
 @media(min-width:993px) and (max-width:1024px){
     .member__left-side {
@@ -1929,6 +2043,9 @@ footer{
     }
     .member__left-side p {
         font-size: 1rem;
+    }
+    .verified__wrapper{  
+        max-width: 400px;
     }
 }
 @media (min-width: 1025px){
@@ -1955,6 +2072,9 @@ footer{
     }
     .footer__paragraphs {
         font-size: 1rem;
+    }
+    .verified__wrapper{  
+        max-width: 400px;
     }
     
 }
