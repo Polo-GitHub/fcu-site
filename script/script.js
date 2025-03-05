@@ -396,6 +396,7 @@ if(addressNextBtn){
         clearErrorOnInput(cityError,[cityNameInput]);
         clearErrorOnInput(invalidCity,[cityNameInput]);
         clearErrorOnInput(stateError,[stateNameInput]);
+        clearErrorOnInput(invalidState,[stateNameInput]);
         clearErrorOnInput(socialError,[socialNumberInput])
         clearErrorOnInput(invalidSocial,[socialNumberInput]);
         clearErrorOnInput(maidenNameError,[maidenNameInput]);
