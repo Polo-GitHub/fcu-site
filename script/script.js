@@ -38,7 +38,6 @@ if(cancelErrorContainer){
 document.addEventListener("input", (e)=>{
     const username = usernameInput.value.trim();
     const password = passwordInput.value;
-    console.log(username,password)
     if(username !== "" && password !== ""){
         signInLoginFormBtn.removeAttribute("disabled");
         signInLoginFormBtn.classList.add("active");
